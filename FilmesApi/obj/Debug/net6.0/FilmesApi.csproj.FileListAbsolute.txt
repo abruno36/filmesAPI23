@@ -60,3 +60,5 @@ C:\Projetos\Treinamento-Alura\FilmesApi\FilmesApi\bin\Debug\net6.0\Microsoft.Asp
 C:\Projetos\Treinamento-Alura\FilmesApi\FilmesApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Projetos\Treinamento-Alura\FilmesApi\FilmesApi\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Projetos\Treinamento-Alura\FilmesApi\FilmesApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Projetos\Treinamento-Alura\FilmesApi\FilmesApi\bin\Debug\net6.0\FilmesApi.xml
+C:\Projetos\Treinamento-Alura\FilmesApi\FilmesApi\obj\Debug\net6.0\FilmesApi.xml
