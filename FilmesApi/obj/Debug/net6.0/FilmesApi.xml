@@ -4,7 +4,7 @@
         <name>FilmesApi</name>
     </assembly>
     <members>
-        <member name="M:FilmesApi.Controllers.FilmeController.AdicionaFilme(FilmesApi.Data.DTOs.CreateFilmeDto)">
+        <member name="M:FilmesApi.Controllers.FilmeController.AdicionaFilme(FilmesApi.Data.DTOs.Filme.CreateFilmeDto)">
             <summary>
             Adiciona um filme ao banco de dados
             </summary>
@@ -22,6 +22,18 @@
             <inheritdoc />
         </member>
         <member name="M:FilmesApi.Migrations.CriandoTabelaDeFilme.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesApi.Migrations.AtualizacaoTabelasNovas">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.AtualizacaoTabelasNovas.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.AtualizacaoTabelasNovas.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.AtualizacaoTabelasNovas.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>

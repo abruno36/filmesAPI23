@@ -1,10 +1,9 @@
 ﻿using AutoMapper;
 using FilmesApi.Data;
-using FilmesApi.Data.DTOs;
+using FilmesApi.Data.DTOs.Filme;
 using FilmesApi.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace FilmesApi.Controllers;
 
@@ -12,10 +11,10 @@ namespace FilmesApi.Controllers;
 [Route("[controller]")]
 public class FilmeController : ControllerBase
 {
-    private FilmeContext _context;
+    private AppDbContext _context;
     private IMapper _mapper;
 
-    public FilmeController(FilmeContext context, IMapper mapper)
+    public FilmeController(AppDbContext context, IMapper mapper)
     {
         _context = context;
         _mapper = mapper;
