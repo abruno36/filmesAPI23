@@ -3,6 +3,7 @@ using FilmesApi.Data;
 using FilmesApi.Data.DTOs.Cinema;
 using FilmesApi.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace FilmesApi.Controllers
 {
@@ -28,34 +29,14 @@ namespace FilmesApi.Controllers
             return CreatedAtAction(nameof(RecuperaCinemasPorId), new { Id = cinema.Id }, cinema);
         }
 
-        //[HttpGet]
-        //public IActionResult RecuperaCinemasPorFilme([FromQuery] string nomeDoFilme)
-        //{
-        //    List<Cinema> cinemas = _context.Cinemas.ToList();
-
-        //    if(cinemas == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    if(!string.IsNullOrEmpty(nomeDoFilme))
-        //    {
-        //        IEnumerable<Cinema> query = from cinema in cinemas
-        //                                    where cinema.Sessoes.Any(sessao =>
-        //                                    sessao.Filme.Titulo == nomeDoFilme)
-        //                                    select cinema;
-        //        cinemas = query.ToList();
-        //    }
-
-        //    List<ReadCinemaDto> readDto = _mapper.Map<List<ReadCinemaDto>>(cinemas);
-
-        //    return Ok(readDto);
-        //}
-
         [HttpGet]
-        public IEnumerable<ReadCinemaDto> RecuperaCinemas()
+        public IEnumerable<ReadCinemaDto> RecuperaCinemas([FromQuery] int? enderecoId = null)
         {
-            return _mapper.Map<List<ReadCinemaDto>>(_context.Cinemas.ToList());
+            if (enderecoId == null)
+            {
+                return _mapper.Map<List<ReadCinemaDto>>(_context.Cinemas.ToList());
+            }
+            return _mapper.Map<List<ReadCinemaDto>>(_context.Cinemas.FromSqlRaw($"SELECT Id, Nome, EnderecoId, GerenteId FROM cinemas where cinemas.EnderecoId = {enderecoId}").ToList());
         }
 
         [HttpGet("{id}")]
