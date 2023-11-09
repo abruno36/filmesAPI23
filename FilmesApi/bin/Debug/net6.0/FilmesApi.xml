@@ -12,28 +12,40 @@
             <returns>IActionResult</returns>
             <response code="201">Caso inserção seja feita com sucesso</response>
         </member>
-        <member name="T:FilmesApi.Migrations.CriandoTabelaDeFilme">
+        <member name="T:FilmesApi.Migrations.Init">
             <inheritdoc />
         </member>
-        <member name="M:FilmesApi.Migrations.CriandoTabelaDeFilme.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:FilmesApi.Migrations.Init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:FilmesApi.Migrations.CriandoTabelaDeFilme.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:FilmesApi.Migrations.Init.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:FilmesApi.Migrations.CriandoTabelaDeFilme.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+        <member name="M:FilmesApi.Migrations.Init.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
-        <member name="T:FilmesApi.Migrations.AtualizacaoTabelasNovas">
+        <member name="T:FilmesApi.Migrations.FilmeIdnulo">
             <inheritdoc />
         </member>
-        <member name="M:FilmesApi.Migrations.AtualizacaoTabelasNovas.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:FilmesApi.Migrations.FilmeIdnulo.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:FilmesApi.Migrations.AtualizacaoTabelasNovas.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:FilmesApi.Migrations.FilmeIdnulo.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:FilmesApi.Migrations.AtualizacaoTabelasNovas.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+        <member name="M:FilmesApi.Migrations.FilmeIdnulo.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesApi.Migrations.FilmeCinema">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.FilmeCinema.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.FilmeCinema.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApi.Migrations.FilmeCinema.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>

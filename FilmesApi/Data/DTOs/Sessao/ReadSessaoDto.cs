@@ -1,14 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using FilmesApi.Data.DTOs.Cinema;
+using FilmesApi.Data.DTOs.Filme;
+using System.ComponentModel.DataAnnotations;
 
 namespace FilmesApi.Data.DTOs.Sessao;
 
 public class ReadSessaoDto
 {
-    [Key]
-    [Required]
-    public int Id { get; set; }
-    public Models.Cinema? Cinema { get; set; }
-    public Models.Filme? Filme { get; set; }
+    public ReadCinemaDto Cinema { get; set; }
+    public ReadFilmeDto Filme { get; set; }
     public DateTime HorarioDeEncerramento { get; set; }
     public DateTime HorarioDeInicio { get; set; }
 }

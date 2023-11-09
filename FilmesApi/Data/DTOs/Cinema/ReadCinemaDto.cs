@@ -1,5 +1,6 @@
 ﻿using FilmesApi.Data.DTOs.Endereco;
 using FilmesApi.Data.DTOs.Gerente;
+using FilmesApi.Data.DTOs.Sessao;
 using System.ComponentModel.DataAnnotations;
 
 namespace FilmesApi.Data.DTOs.Cinema;
@@ -13,4 +14,5 @@ public class ReadCinemaDto
     public string Nome { get; set; } = string.Empty;
     public ReadEnderecoDto Endereco { get; set; }
     public ReadGerenteDto Gerente { get; set; }
+    public ICollection<ReadSessaoDto> Sessoes { get; set; }
 }
